@@ -1,0 +1,81 @@
+\usepackage{calc}
+\usepackage{afterpage}
+\usepackage{rotating}
+% \usepackage[pscoord]{eso-pic}
+
+\newcounter{taboffset}
+% \newcounter{tabside}
+
+\newcommand{\puttab}{}
+
+% \newcommand{\defineputtab}{
+%   \renewcommand{\puttab}{
+%     \AddToShipoutPicture*{
+%       \setcounter{taboffset}{720}
+%       \addtocounter{taboffset}{\value{chapter}*-30}
+%       \ifodd\thepage
+%          \setcounter{tabside}{590} % 590
+%       \else
+%          \setcounter{tabside}{12} % 12
+%       \fi
+%       \put(\value{tabside},\value{taboffset}){
+%         \begin{rotate}{90}
+%           \fboxsep=6pt%
+%           \fcolorbox{black}{black}{%
+%             \textcolor{white}{\sffamily\large\bfseries C\arabic{chapter}}%
+%           }
+%         \end{rotate}
+%       }}
+%     \afterpage{\puttab}
+%   }
+% }
+
+% \newcommand{\defineputtabOld}{
+%   \renewcommand{\puttab}{
+%     \AddToShipoutPicture*{
+%       \setcounter{taboffset}{720}
+%       \addtocounter{taboffset}{\value{chapter}*-30}
+%       \ifodd\thepage
+%       \put(580,\value{taboffset}){
+%         \begin{rotate}{90}
+%           \fboxsep=6pt%
+%           \fcolorbox{black}{black}{%
+%             \rule[-3mm]{0pt}{0pt}
+%             \textcolor{white}{\sffamily\large\bfseries C\arabic{chapter}}%
+%           }
+%         \end{rotate}
+%       }
+%       \fi
+%       }
+%     \afterpage{\puttab}
+%   }
+% }
+
+\newcommand{\defineputtab}{
+  \renewcommand{\puttab}{
+    \ifodd\thepage
+    \begin{picture}(0,0)
+      \setcounter{taboffset}{10}
+      \addtocounter{taboffset}{\value{chapter}*-14}
+      \put(202,\value{taboffset}){
+        \begin{rotate}{90}
+          \fboxsep=6pt%
+          \fcolorbox{black}{black}{%
+            \rule[-5mm]{0pt}{0pt}
+            \textcolor{white}{\sffamily\large\bfseries C\arabic{chapter}}%
+          }
+        \end{rotate}
+      }
+    \end{picture}
+    \fi
+  }
+}
+
+
+\newcommand{\addtabs}{
+  \defineputtab
+}
+
+\newcommand{\cleartabs}{
+  \renewcommand{\puttab}{}
+}

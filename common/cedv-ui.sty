@@ -1,0 +1,29 @@
+\usepackage{fancybox}
+
+\def\comando#1{\texttt{\small{#1}}}
+\def\linea#1{\fboxsep=0.8mm\fontsize{7}{7}\selectfont\ovalbox{\texttt{\textbf{#1}}}\normalsize}
+\def\botonazo#1{\fboxsep=0.8mm\fontsize{6}{6}\selectfont\ovalbox{\textbf{#1}}\normalsize}
+
+\def\raton#1{
+\negthinspace \negthinspace
+\begin{minipage}[c][1ex][c]{1em}
+   \resizebox{!}{1em}{\includegraphics{../common/img/gui/#1.jpg}}
+\end{minipage}
+}
+
+\def\interfaz#1{
+\negthinspace \negthinspace
+\begin{minipage}[c][1ex][c]{1em}
+   \resizebox{!}{1em}{\linethickness{0.3mm} \frame{\includegraphics{../common/img/gui/#1.jpg}}}
+\end{minipage}
+}
+
+
+%% Insercion de teclazos %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Ejemplo: \teclazo{Ctrl} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\teclazo#1{
+    \negthinspace
+    \fontsize{9}{6}\selectfont \ovalbox{\texttt{\textbf{#1}}} \normalsize
+    \negthinspace
+}
