@@ -1,0 +1,86 @@
+\documentclass{common/eiibook}
+
+\title{Elaborar un TFG}
+\bookSubtitle{Guía para elaborar tu TFG con Francisco Moya}
+\makeindex
+\input{booleans}
+
+\booltrue{cabecera}
+\booltrue{finales}
+\booltrue{intro}
+
+\begin{document}
+
+\ifbool{cabecera}{%
+\frontpage
+\frontmatter
+\tableofcontents
+\tableofcontents}
+\input{common/acro.tex}
+
+\mainmatter
+
+\ifbool{intro}{%
+%\clearpage\setcounter{page}{0}
+%\setcounter{chapter}{0}
+\chapterauthors{Francisco Moya Fernández}
+\chapter{Introducción}
+\input{intro/intro.tex}}
+
+\ifbool{admin}{%
+%\clearpage\setcounter{page}{0}
+%\setcounter{chapter}{0}
+\chapterauthors{Francisco Moya Fernández}
+\chapter{Burocracia del TFG}
+\input{administrivia/administrivia.tex}}
+
+\ifbool{antes}{%
+%\clearpage\setcounter{page}{0}
+%\setcounter{chapter}{0}
+\chapterauthors{Francisco Moya Fernández}
+\chapter{Antes de empezar}
+\input{intro/antes.tex}}
+
+\ifbool{durante}{%
+%\clearpage\setcounter{page}{0}
+%\setcounter{chapter}{0}
+\chapterauthors{Francisco Moya Fernández}
+\chapter{Durante la ejecución del TFG}
+\input{durante/durante.tex}}
+
+\ifbool{result}{%
+%\clearpage\setcounter{page}{0}
+%\setcounter{chapter}{0}
+\chapterauthors{Francisco Moya Fernández}
+\chapter{Presentación de resultados}
+\input{resultados/resultados.tex}}
+
+\ifbool{defensa}{%
+%\clearpage\setcounter{page}{0}
+%\setcounter{chapter}{0}
+\chapterauthors{Francisco Moya Fernández}
+\chapter{La defensa}
+\input{defensa/defensa.tex}}
+
+\appendix
+
+\ifbool{gnu}{%
+%\clearpage\setcounter{page}{0}
+%\setcounter{chapter}{0}
+\chapterauthors{Francisco Moya Fernández}
+\chapter{Introducción a GNU}
+\input{gnu/gnu.tex}}
+
+\ifbool{embedded}{%
+%\clearpage\setcounter{page}{0}
+%\setcounter{chapter}{0}
+\chapterauthors{Francisco Moya Fernández}
+\chapter{Desarrollo de sistemas empotrados}
+\input{embedded/embedded.tex}}
+
+\ifbool{finales}{%
+\backmatter}
+
+\bibliography{main}
+
+\end{document}

@@ -1,0 +1,41 @@
+%% -- Activa la siguiente línea para generar PDFs aptos para conversión a EPUB
+%\usepackage{cedv-epub}
+
+% Espaciado entre párrafos
+\setlength{\parskip}{4pt}
+
+\def\tablename{Tabla}
+\bibliographystyle{plain}
+
+% \addto\captionsspanish{%
+%   \renewcommand\appendixname{Anexo}
+%   \renewcommand\appendixpagename{Anexos}
+% }
+\addto\captionsspanish{\renewcommand{\appendixname}{Anexo}}
+
+\renewcommand{\appendixname}{Anexo}
+\renewcommand{\appendixtocname}{Anexos}
+\renewcommand{\appendixpagename}{ANEXOS}
+
+% http://www.aq.upm.es/Departamentos/Fisica/agmartin/webpublico/latex/FAQ-CervanTeX/FAQ-CervanTeX-8.html
+\setcounter{topnumber}{4}
+\setcounter{bottomnumber}{4}
+\setcounter{totalnumber}{4}
+\setcounter{dbltopnumber}{4}
+\renewcommand{\topfraction}{.97}
+\renewcommand{\bottomfraction}{.97}
+\renewcommand{\textfraction}{.03}
+\renewcommand{\floatpagefraction}{.9}
+\renewcommand{\dbltopfraction}{.97}
+\renewcommand{\dblfloatpagefraction}{.9}
+\setlength{\floatsep}{12pt plus 6pt minus 4pt}
+\setlength{\textfloatsep}{15pt plus 8pt minus 5pt}
+\setlength{\intextsep}{12pt plus 6pt minus 4pt}
+\setlength{\dblfloatsep}{12pt plus 6pt minus 4pt}
+\setlength{\dbltextfloatsep}{15pt plus 8pt minus 5pt}
+
+
+% más ajustes
+%\flushbottom
+\raggedbottom
+\usepackage[defaultlines=4,all]{nowidow}
