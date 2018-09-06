@@ -1,34 +1,30 @@
 \section{Metodología de desarrollo}
 
-En general el TFG está sometido a una serie de incertidumbres, derivadas de la disponibilidad horaria del estudiante y de sus conocimientos previos, que hace muy recomendable la aplicación de métodos ágiles.  Los métodos ágiles pretenden precisamente maximizar los resultados en entornos muy dinámicos con alta incertidumbre.
+En general el TFG está sometido a una serie de incertidumbres, derivadas de tu disponibilidad horaria y de tus conocimientos previos, que hace muy recomendable la aplicación de métodos ágiles.  Los métodos ágiles pretenden precisamente maximizar los resultados en entornos muy dinámicos con alta incertidumbre.
 
-Busca información acerca de \emph{Scrum} para tener una idea general del proceso.  Básicamente se trata de reducir la burocracia al mínimo y, aún así, tener controlado el proceso en todo momento.
+Lee el capítulo \emph{Procedimiento} de la plantilla.  Busca información acerca de \emph{Scrum} para tener una idea general del proceso.  Básicamente se trata de reducir la burocracia al mínimo y, aún así, tener controlado el proceso en todo momento.
 
-Seguiremos una versión simplificada de \emph{Scrum}. Emplearemos iteraciones (\emph{sprints}) de dos semanas.  Usaremos \emph{user stories} no completamente puras, en el sentido que a veces necesitarás aprender o leer, sin repercusión medible en el valor percibido por el \emph{Product Owner}. No te preocupes, pero intenta reducir al mínimo este tipo de \emph{user stories} para tener el proceso controlado.
+Eso significa que no vamos a rellenar ningún anexo TFG-04 (\emph{Informe Reunión Director o Asesor TFG}).  En su lugar, las decisiones quedarán plasmadas en la herramienta Trello y en el sistema de control de versiones.  Considero que es un sistema más transparente, más verificable, y menos burocrático.
 
-Puntualmente puede ser necesario una historia de usuario que solo pretende explorar opciones. No hay problema, se denominan \emph{spikes}, pero procura que la exploración no domine tu tiempo dedicado al TFG.
+\subsection{Control de versiones}
+\label{sec:control-versiones}
 
-Para la planificación emplearemos un \href{tablero Trello}{https://trello.com}.  Abre tu propia cuenta y comunica tu usuario al director del TFG para que te comparta el tablero inicial.
+El control de versiones del proyecto se realizará mediante el uso de \href{https://github.com}{GitHub}.  Abre tu cuenta en 
+GitHub y haz un \emph{fork} del repositorio de la plantilla de TFG.  Para ello basta visitar la página \url{https://github.com/FranciscoMoya/eii-tfg} y pinchar en el botón \emph{Fork}, arriba a la derecha.  
 
-\subsection{Planificación de sprints}
+En tu nuevo repositorio, añade a mi usuario \emph{FranciscoMoya} como uno de los colaboradores de tu nuevo repositorio.  Para ello pincha en \emph{Settings} arriba y después en \emph{Collaborators}. En la caja de búsqueda escribe \emph{FranciscoMoya} y pincha en el botón de añadir.  Este paso permite que pueda hacer correcciones directamente en el repositorio.  No te preocupes, no editaré archivos sin avisar primero.
 
-Añade historias de usuario al Backlog. Puedes añadirlas cuando quieras, pero no reordenes, añade siempre al final. El product owner priorizará las historias. Justo antes de la siguiente iteración tendremos una reunión presencial o virtual para planificar la iteración.
+Aprovecha para editar todos los datos relevantes en \emph{Settings}.  Cambia el nombre al de tu TFG, y rellena la descripción.  En la página del proyecto pincha en el lapicero que hay junto al texto descriptivo.  Ésto te permitirá editar el archivo \emph{README.md}.  Está en \href{https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet}{\emph{Markdown}}, que es un formato de texto para elaborar documentos simples, como una especie de \LaTeX{} para pobres.  Cuando estés satisfecho pincha en el botón \emph{Commit}.
 
-Usando planning poker dimensionaremos las historias de usuario en días de trabajo. El product owner moverá las primeras historias del backlog a ToDo hasta completar los días de la iteración. Los días de trabajo efectivo de la iteración no tienen por qué ser dos semanas, hay que contar con el tiempo realmente dedicado.
+Tu copia del proyecto tendrá inicialmente solamente la plantilla del proyecto.  No tengas miedo de añadir otro tipo de material producido durante la ejecución del proyecto pero procura evitar archivos generados.  Por ejemplo, no incluyas archivos objeto ni archivos EXE, generados al compilar un programa.  En su lugar, mete solo el código fuente a partir del que se puede generar.
 
-Cuando empiece la iteración elige una tarea cualquiera de la lista ToDo y arrástrala a la lista Doing. Cuando termines la tarea arrástrala a QC (quality control). El Scrum Master (yo) revisará que la historia está realmente acabada y si así es la pasará a Done. En caso contrario la pasará a Doing otra vez. Debes estar pendiente y ver los comentarios que se han añadido.
+El repositorio es esencial para dormir tranquilos.  He visto al menos dos veces en mi carrera cómo alumnos perdían todo su trabajo por fallo del disco duro.  Procura aprender de los errores de otros.  Si eres disciplinado y guardas tus cambios en el control de versiones yo tendré un mejor seguimiento y tú tendrás la tranquilidad de que hay una gran empresa que hace los backups por tí.  También te libera de estar haciendo copias cuando quieres probar algo nuevo.  No tengas miedo en cambiar cualquier cosa.  Si quieres volver a cualquier estado anterior es fácil.
 
-Si en el transcurso de tu trabajo te encuentras con un obstáculo que te impide progresar con una historia, muévela a Blocked.
+\subsection{Edición en línea}
+\label{sec:edicion-online}
 
-Cuando acabe el proyecto tendrás todas las historias por orden de terminación en Done. Es una interesante fuente de información para copiar en la memoria de tu TFG. Por tanto tómate en serio la redacción de cada historia de usuario.
+Existe un excelente editor en línea para documentos \LaTeX{} llamado \href{https://overleaf.com}{Overleaf}.  La opción gratuita no incluye la integración con GitHub, por lo que tendremos que hacerla a mano.  Para ello descarga el repositorio GitHub como un archivo comprimido \emph{ZIP}.  Es tan sencillo como ir a la página del proyecto y pinchar en \emph{Clone or download} y posteriormente en \emph{Download ZIP}.
 
-Roles
-F. Moya: Product Owner, Scrum Master
-Alumno: Team Member
-Enlaces
-Usar trello para Scrum
-La guía oficial de Scrum
+Hazte una cuenta en \href{https://overleaf.com}{Overleaf} y crea un nuevo proyecto a partir del ZIP descargado de GitHub. Para ello pincha en \emph{Nuevo proyecto} y selecciona \emph{Subir proyecto}.  En Overleaf puedes editar cómodamente el documento de la memoria, pero el repositorio GitHub no se actualizará automáticamente.  Volveremos a ésto más adelante.
 
-\section{Scrum para TFG}
-
-\section{Control de versiones}
+Pincha en el botón \emph{Share} arriba, y posteriormente en \emph{Turn on link sharing}.  Copia la primera URL que se genera en el tablero Trello como un comentario a la tarjeta \emph{Plantilla de TFG}.  No publiques esta URL en otro sitio.  Cualquiera con acceso a esa URL podría editar tu TFG y generarte verdaderos quebraderos de cabeza.

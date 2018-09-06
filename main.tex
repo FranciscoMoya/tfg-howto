@@ -6,8 +6,15 @@
 \input{booleans}
 
 \booltrue{cabecera}
-\booltrue{finales}
 \booltrue{intro}
+\booltrue{antes}
+\booltrue{admin}
+\booltrue{durante}
+\booltrue{result}
+\booltrue{defensa}
+\booltrue{gnu}
+\booltrue{embedded}
+\booltrue{finales}
 
 \begin{document}
 
@@ -27,19 +34,19 @@
 \chapter{Introducción}
 \input{intro/intro.tex}}
 
+\ifbool{antes}{%
+%\clearpage\setcounter{page}{0}
+%\setcounter{chapter}{0}
+\chapterauthors{Francisco Moya Fernández}
+\chapter{Antes de empezar}
+\input{antes/antes.tex}}
+
 \ifbool{admin}{%
 %\clearpage\setcounter{page}{0}
 %\setcounter{chapter}{0}
 \chapterauthors{Francisco Moya Fernández}
 \chapter{Burocracia del TFG}
 \input{administrivia/administrivia.tex}}
-
-\ifbool{antes}{%
-%\clearpage\setcounter{page}{0}
-%\setcounter{chapter}{0}
-\chapterauthors{Francisco Moya Fernández}
-\chapter{Antes de empezar}
-\input{intro/antes.tex}}
 
 \ifbool{durante}{%
 %\clearpage\setcounter{page}{0}

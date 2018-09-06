@@ -1,0 +1,38 @@
+\section{Rutina de trabajo}
+\label{sec:rutina-tfg}
+
+Recapitulemos brevemente para no perder la visión general.  Tenemos actualmente tres herramientas que sirven a propósitos diferentes.
+
+\begin{itemize}
+\item Trello se usa para la información privada del proyecto, el seguimiento y la secuenciación de tareas.  Trello solo lo vemos tú y yo.  Si quieres añadir información sobre el proceso de desarrollo en la memoria procura ir haciendo capturas de pantalla de tu tablero Trello tras cada iteración.
+\item Overleaf se usa para editar la memoria.  Tú y yo podemos editarla, y existe una URL para poder ofrecer una vista de solo lectura a otros.  La interfaz es muy intuitiva, así que no deberías tener muchos problemas en usarla.  Revisa el apéndice A de la Plantilla de TFG para tener una idea general de \LaTeX{}.
+\item GitHub se usa para tener control de versiones.  De todo, incluída la memoria.  En este capítulo veremos cómo.
+\end{itemize}
+
+\subsection{GitHub Desktop}
+\label{sec:github-desktop}
+
+El uso del repositorio no es complejo, pero es aún más sencillo si empleamos una herramienta de ayuda, como \href{https://desktop.github.com/}{GitHub Desktop}.  
+
+Instala la aplicación y sigue el tutorial de \href{https://programminghistorian.org/es/lecciones/introduccion-control-versiones-github-desktop}{esta página} para aprender a utilizarla.  No necesitas gran cosa para empezar, puedes parar cuando sepas lo que es un \emph{commit}, cómo se publica con \emph{push}, y cómo se refresca la copia de trabajo con \emph{fetch} o \emph{pull}.  De momento puedes ignorar todo lo relativo a ramas (\emph{branch}), mezclado (\emph{merge}) y \emph{pull requests}.
+
+Los resultados esperados de una historia de usuario van a ser casi siempre un commit en el repositorio.  Es decir, para dar por cerrada una tarea vas a tener que indicarme en un comentario cuál es el commit del repositorio que lo implementa y yo lo voy a comprobar en el propio repositorio.
+
+Cuando la tarea sea de documentación tendrás que usar Overleaf para editar el documento pero luego habrá que trasladarlo a GitHub.  Sigue estos sencillos pasos:
+
+\begin{itemize}
+\item Ve a tu proyecto Overleaf y pincha en \emph{Menu} arriba a la izquierda.  Descarga el código fuente del proyecto pinchando en \emph{Source}.  Eso descargará un archivo comprimido ZIP en la carpeta de descargas de tu navegador.  
+
+\item Extrae el contenido del archivo en tu copia local del repositorio.
+
+\item Ejecuta GitHub Desktop y marca para añadir todos los archivos nuevos que hayas añadido a tu proyecto Overleaf.  Rellena una descripción de los cambios y pincha en \emph{Commit}.
+
+\item Propaga los cambios a GitHub pinchando en el botón \emph{Push to origin}.
+\end{itemize}
+
+\subsection{Permisos y atribuciones}
+\label{sec:permisos-atribuciones}
+
+Si copias en la memoria dibujos, tablas o imágenes de otros, solicita permiso al autor.  En el archivo \texttt{\_FUENTES.txt} escribe el origen de cada archivo conforme los vas añadiendo y anota cuándo y de qué forma solicitaste permiso al autor.  Cuando recibas la autorización guarda la prueba.
+
+Hay una excepción a esta regla.  Cuando la licencia de uso permite expresamente la copia entonces no será necesario solicitar permiso, pero deberás atribuirlo adecuadamente.  Anota la licencia en \texttt{\_FUENTES.txt}.
